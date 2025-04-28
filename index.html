@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>📚 Online Book Store</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<div id="cart-notification" class="notification hidden">
+		Added to Cart
+	</div>
+
+	<header class="header-group">
+		<div class="container">
+			<div class="header-main">
+				<div class="logo">
+					<h1><a href="#">Online Book Store</a></h1>
+				</div>
+
+				<div class="centered-content">
+					<div class="search-bar">
+						<input type="text" placeholder="Search for books..." id="search-input">
+						<button>Search</button>
+					</div>
+				</div>
+
+				<div class="auth-cart">
+					<button class="auth-btn">Sign In</button>
+					<button class="cart-btn" onclick="openSlider('cart-slider')">Cart</button>
+					<div class="menu-toggle" id="menuToggle">
+						<span>&#9776;</span>
+					</div>
+				</div>
+			</div>
+
+			<nav class="main-menu">
+				<ul class="navbar-level-1 nav-list">
+					<li class="nav-item"><a href="#books">Books</a></li>
+					<li class="nav-item dropdown">
+						<a href="#" class="dropdown-toggle">Categories</a>
+						<ul class="dropdown-menu">
+							<li><a href="#" title="Non-Fiction">Non-Fiction</a></li>
+							<li><a href="#" title="Fiction">Fiction</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown">
+						<a href="#" id="author-dropdown-toggle" class="dropdown-toggle">Authors</a>
+						<ul class="dropdown-menu" id="author-dropdown">
+						</ul>
+					</li>
+					<li class="nav-item"><a href="#about">About Us</a></li>
+					<li class="nav-item"><a href="#contact">Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
+
+	<main>
+		<section class="book-listing">
+			<div class="container">
+				<div id="products-container" class="products-container">
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<div id="cart-slider" class="slider">
+		<div class="slider-content">
+			<h2>Your Cart is Empty</h2>
+		</div>
+		<button class="close-slider" onclick="closeSlider('cart-slider')">&times;</button>
+	</div>
+
+	<script src="js/books.js"></script>
+	<script src="js/search.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>

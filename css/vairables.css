@@ -1,0 +1,27 @@
+/* Colors */
+:root {
+    --color-primary: #4CAF50;
+    --color-secondary: #666;
+    --color-accent: #ff4500;
+    --color-background: #000;
+    --color-white: #fff;
+    --color-grey: #ccc;
+    --color-black: #000;
+    --color-hover: #ff6347;
+
+    --font-family: 'Arial', sans-serif;
+}
+
+/* Spacing */
+:root {
+    --spacing-small: 5px;
+    --spacing-medium: 10px;
+    --spacing-large: 20px;
+}
+
+/* Font Sizes */
+:root {
+    --font-size-small: 12px;
+    --font-size-medium: 16px;
+    --font-size-large: 24px;
+}

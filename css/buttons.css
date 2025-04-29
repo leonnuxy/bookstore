@@ -1,0 +1,28 @@
+/* General Button Styles */
+button, .auth-btn, .cart-btn {
+    padding: var(--spacing-medium);
+    border: none;
+    border-radius: var(--spacing-small);
+    cursor: pointer;
+    font-family: var(--font-family);
+}
+
+/* Primary Buttons */
+.auth-btn, .signin-btn {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+}
+
+.auth-btn:hover, .signin-btn:hover {
+    background-color: var(--color-hover);
+}
+
+/* Accent Buttons */
+.cart-btn {
+    background-color: var(--color-accent);
+    color: var(--color-white);
+}
+
+.cart-btn:hover {
+    background-color: var(--color-hover);
+}

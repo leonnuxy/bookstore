@@ -74,6 +74,46 @@
 		<button class="close-slider" onclick="closeSlider('cart-slider')">&times;</button>
 	</div>
 
+	<!-- Book Details Popup Modal -->
+	<div id="book-modal" class="modal hidden">
+	  <div class="modal-content">
+	    <span class="close-modal" id="close-modal">&times;</span>
+	    <div class="modal-layout">
+	      <div class="modal-left">
+	        <img id="modal-book-image" src="" alt="Book Image" class="modal-book-image">
+	        <div class="modal-book-prices">
+	          <span id="modal-book-old-price" class="old-price"></span>
+	          <span id="modal-book-price" class="value"></span>
+	        </div>
+	        <button id="modal-add-to-cart" class="modal-add-to-cart-btn">Add to Cart</button>
+	      </div>
+	      <div class="modal-right">
+	        <h2 id="modal-book-title"></h2>
+	        <h4 id="modal-book-author"></h4>
+	        <div class="modal-section">
+	          <h5>Description</h5>
+	          <p id="modal-book-description"></p>
+	        </div>
+	        <div class="modal-section">
+	          <h5>Product Details</h5>
+	          <div class="book-details-grid">
+	            <div class="book-detail-label">ISBN:</div>
+	            <div id="modal-book-isbn" class="book-detail-value"></div>
+	            <div class="book-detail-label">Publisher:</div>
+	            <div id="modal-book-publisher" class="book-detail-value"></div>
+	            <div class="book-detail-label">Publication Date:</div>
+	            <div id="modal-book-published-date" class="book-detail-value"></div>
+	            <div class="book-detail-label">Pages:</div>
+	            <div id="modal-book-pages" class="book-detail-value"></div>
+	            <div class="book-detail-label">Language:</div>
+	            <div id="modal-book-language" class="book-detail-value"></div>
+	          </div>
+	        </div>
+	      </div>
+	    </div>
+	  </div>
+	</div>
+
 	<script src="js/books.js"></script>
 	<script src="js/search.js"></script>
 	<script src="js/script.js"></script>

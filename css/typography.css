@@ -1,0 +1,25 @@
+/* Headings */
+h1, h2, h3 {
+    font-family: var(--font-family);
+    margin: var(--spacing-medium) 0;
+}
+
+h1 {
+    font-size: var(--font-size-large);
+    color: var(--color-primary);
+}
+
+h2 {
+    font-size: var(--font-size-medium);
+    color: var(--color-secondary);
+}
+
+/* Links */
+a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--color-hover);
+}
